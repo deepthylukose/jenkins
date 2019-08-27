@@ -33,7 +33,7 @@ class ViewController: UIViewController {
      if   self.m_txtusername.text == "Vicky" && self.m_txtpassword.text == "Power123"
         
      {
-        
+        print("welcome")
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "jsonViewController") as! jsonViewController
         self.navigationController?.pushViewController(obj, animated: true)
         }
@@ -54,6 +54,7 @@ class ViewController: UIViewController {
      else
         
      {
+         print("incorrect")
         let alert = UIAlertController(title: "Alert", message: "Incorrect Uername and  Password.Try again", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
