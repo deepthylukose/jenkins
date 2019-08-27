@@ -34,6 +34,8 @@ class ViewController: UIViewController {
         
      {
         print("welcome")
+          print("welcome")
+          print("welcome")
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "jsonViewController") as! jsonViewController
         self.navigationController?.pushViewController(obj, animated: true)
         }
