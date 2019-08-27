@@ -33,6 +33,7 @@ class ViewController: UIViewController {
      if   self.m_txtusername.text == "Vicky" && self.m_txtpassword.text == "Power123"
         
      {
+        print("welcome user");
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "jsonViewController") as! jsonViewController
         self.navigationController?.pushViewController(obj, animated: true)
         }
