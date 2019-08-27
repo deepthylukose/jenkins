@@ -31,11 +31,9 @@ class ViewController: UIViewController {
     @IBAction func m_btnlogin(_ sender: Any) {
         
      if   self.m_txtusername.text == "Vicky" && self.m_txtpassword.text == "Power123"
-        
      {
-        print("welcome")
-          print("welcome")
-          print("welcome")
+        
+    
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "jsonViewController") as! jsonViewController
         self.navigationController?.pushViewController(obj, animated: true)
         }
